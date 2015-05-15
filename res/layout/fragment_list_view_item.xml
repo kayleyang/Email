@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <CheckBox
+        android:id="@+id/chk_select"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true" />
+
+    <TextView
+        android:id="@+id/tv_from"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/chk_select"
+        android:layout_alignBottom="@+id/chk_select"
+        android:layout_toRightOf="@+id/chk_select"
+        android:lines="1"
+        android:maxLength="25"
+        android:text="Medium Text"
+        android:textAppearance="?android:attr/textAppearanceMedium" />
+
+    <TextView
+        android:id="@+id/tv_subject"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/tv_from"
+        android:layout_toRightOf="@+id/chk_select"        
+        android:lines="1"
+        android:maxLength="20"
+        android:marqueeRepeatLimit="1"
+        android:text="TextView" />
+
+    <CheckBox
+        android:id="@+id/chk_star"
+        style="?android:attr/starStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/tv_subject"
+        android:layout_alignParentRight="true" />
+
+    <TextView
+        android:id="@+id/tv_time"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/tv_subject"
+        android:layout_alignBottom="@+id/tv_subject"
+        android:layout_alignParentRight="true"
+        android:text="TextView" />
+
+</RelativeLayout>

@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent" >
+
+    <TextView
+        android:id="@+id/context"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="20dp"
+        android:text="您可以通过以下几个步骤为大多数账户配置电子邮件"
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+    <EditText
+        android:id="@+id/editAccount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/context"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="10dp"
+        android:ems="12"
+        android:hint="邮件地址"
+        android:inputType="textEmailAddress"
+        android:maxLines="1"
+        android:textSize="20sp" >
+
+        <requestFocus />
+    </EditText>
+
+    <EditText
+        android:id="@+id/editPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/editAccount"
+        android:layout_centerHorizontal="true"
+        android:ems="12"
+        android:hint="密码"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:textSize="20sp" />
+
+    <CheckBox
+        android:id="@+id/isShowPassword"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/editAccount"
+        android:layout_below="@+id/editPassword"
+        android:text="显示密码" />
+
+    <Button
+        android:id="@+id/btnSetup"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/isShowPassword"
+        android:layout_alignBottom="@+id/isShowPassword"
+        android:layout_centerHorizontal="true"
+        android:enabled="false"
+        android:text="手动设置" />
+
+    <Button
+        android:id="@+id/btnNext"
+        style="?android:attr/buttonStyleSmall"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/btnSetup"
+        android:layout_alignBottom="@+id/btnSetup"
+        android:layout_marginLeft="15dp"
+        android:layout_toRightOf="@+id/btnSetup"
+        android:enabled="false"
+        android:text="下一步" />
+
+</RelativeLayout>

@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:background="@android:drawable/title_bar"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <TextView
+            android:id="@+id/TextView_SetPatternPassword_HelpInfo"
+            android:layout_width="fill_parent"
+            android:layout_height="50dip"
+            android:gravity="center"
+            android:singleLine="true"
+            android:textColor="@android:color/white"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:background="#666666" />
+
+    <LinearLayout
+        android:layout_width="fill_parent"
+        android:layout_height="320dip"
+        android:orientation="horizontal" >
+
+        <cn.edu.aku.email.patternpassword.PatternPasswordView
+            android:id="@+id/PatternPasswordView_SetPatternPassword"
+            android:layout_width="fill_parent"
+            android:layout_marginTop="20dip"
+            android:layout_marginBottom="10dip"
+            android:layout_marginLeft="5dip"
+            android:layout_marginRight="5dip"
+            android:layout_height="fill_parent" >
+        </cn.edu.aku.email.patternpassword.PatternPasswordView>
+    </LinearLayout>
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="5dip"
+        android:background="#666666" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@android:drawable/bottom_bar" >
+
+        <Button
+            android:id="@+id/Button_SetPatternPassword_Reset"
+            android:layout_width="130dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginLeft="20dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="Reset"
+            android:textColor="#ff4d301f"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+
+        <Button
+            android:id="@+id/Button_SetPatternPassword_Next"
+            android:layout_width="130dip"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignWithParentIfMissing="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="5dip"
+            android:layout_marginRight="20dip"
+            android:layout_marginTop="5dip"
+            android:gravity="center"
+            android:padding="10dip"
+            android:text="Continue"
+            android:textColor="#ff4d301f"
+            android:textSize="16.0sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</LinearLayout>

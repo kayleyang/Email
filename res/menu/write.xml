@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android" >
+    
+    <item
+        android:id="@+id/write_menu_insert"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_menu_add"
+        android:title="@string/write_string_insert"/>
+    <item
+        android:id="@+id/write_menu_attach"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_menu_attachment"
+        android:title="@string/write_string_attach"/>
+    <item
+        android:id="@+id/write_menu_save"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_menu_save"
+        android:title="@string/write_string_save"/>
+    <item
+        android:id="@+id/write_menu_send"
+        android:showAsAction="always"
+        android:icon="@drawable/ic_menu_send"
+        android:title="@string/write_string_send"/>
+
+</menu>
