@@ -81,6 +81,8 @@ public class MainActivity extends Activity implements ActionBar.OnNavigationList
 	private void initView(){
 		//得到ActionBar
 		actionBar = getActionBar();
+		
+		
 	}
 
 	/**
